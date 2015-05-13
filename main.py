@@ -1,3 +1,5 @@
+# coding=utf-8
+
 '''
 Created on 13/mag/2015
 
@@ -56,8 +58,13 @@ elif cmd_to_execute == "get_all_human":
     for el in l:
         print str(el[1])+"\t\tid="+str(el[0])+"\t\tquantity="+str(el[2])
 
+elif cmd_to_execute == "create_schema":
+    db.create_schema()
+    db.commit()
+    print "done"
+
 else:
-    print "[E], invalid command"
+    raise Exception("fuck this")
 
 db.commit()
 conn.close()
