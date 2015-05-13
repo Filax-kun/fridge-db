@@ -64,7 +64,7 @@ elif cmd_to_execute == "create_schema":
     print "done"
 
 else:
-    raise Exception("fuck this")
+    raise Exception("(╯°□°）╯︵ ┻━┻")
 
 db.commit()
 conn.close()
