@@ -1,6 +1,7 @@
 config.py
 .project
 .pydevproject
+*.db
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
